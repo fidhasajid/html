@@ -1,0 +1,30 @@
+
+<a href="index.html">
+    Go Back
+</a>
+<br>
+<br>
+
+<input id="firstName" />
+<input id="lastName" />
+
+<br>
+<br>
+<button onclick="getName()"> Submit</button>
+
+<br>
+<br>
+
+<div id="result">
+
+</div>
+
+<script>
+    function getName() {
+        firstName = document.getElementById("firstName").value
+        lastName = document.getElementById("lastName").value
+
+        document.getElementById("result").innerHTML = "Welcome, " + firstName + " " + lastName
+
+    }
+</script>
